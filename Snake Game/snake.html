@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Snake</title>
+        <link rel="stylesheet" href="snake.css">
+        <script src="snake.js"></script>
+    </head>
+
+    <body>
+        <h1>SNAKE GAME</h1>
+    
+        <div class="game-info">
+            <div class="score-box">
+                <div class="score-label">SCORE</div>
+                <div class="score-value" id="score">0</div>
+            </div>
+            <div class="score-box">
+                <div class="score-label">HIGH SCORE</div>
+                <div class="score-value" id="highScore">0</div>
+            </div>
+        </div>
+        
+        <div class="difficulty-container">
+            <span>Difficulty: </span>
+            <button id="easyBtn" class="difficulty-btn easy" onclick="setDifficulty('easy')">Easy</button>
+            <button id="mediumBtn" class="difficulty-btn medium" onclick="setDifficulty('medium')">Medium</button>
+            <button id="hardBtn" class="difficulty-btn hard" onclick="setDifficulty('hard')">Hard</button>
+        </div>
+        
+        <div class="focus-hint">Click on the game area to focus and start playing</div>
+    
+        <div id="gameContainer">
+            <div id="focusIndicator">Game Focused</div>
+            <canvas id="board"></canvas>
+        </div>
+        
+        <div class="instructions">
+            <p>Use arrow keys to control the snake</p>
+            <p>Eat the red food to grow and score points</p>
+            <p>Don't hit the walls or yourself!</p>
+            <p><strong>Click on the game area to focus before playing</strong></p>
+        </div>
+    </body>
+</html>

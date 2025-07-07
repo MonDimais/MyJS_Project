@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Pong</title>
+        <link rel="stylesheet" href="pong.css">
+        <script src="pong.js"></script>
+    </head>
+
+    <body>
+        <h1>Pong Game</h1>
+        
+        <div class="difficulty-container">
+            <span style="color: white; margin: auto;">Difficulty:</span>
+            <button id="easyBtn" class="difficulty-btn easy" onclick="setDifficulty('easy')">Easy</button>
+            <button id="mediumBtn" class="difficulty-btn medium" onclick="setDifficulty('medium')">Medium</button>
+            <button id="hardBtn" class="difficulty-btn hard" onclick="setDifficulty('hard')">Hard</button>
+        </div>
+        
+        <br>
+        
+        <canvas id="board"></canvas>
+        
+        <div class="instructions">
+            <p>Player 1 (Left): W = Up, S = Down</p>
+            <p>Player 2 (Right): ↑ = Up, ↓ = Down</p>
+        </div>
+    </body>
+</html>
