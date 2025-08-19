@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Weather App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="app">
+            <section class="header">
+                <h1 class="title">Weather</h1>
+                <div class="controls">
+                    <form id="search-form" class="search" autocomplete="off">
+                        <input id="search-input" class="search__input" type="text" placeholder="Search city (e.g., London)" aria-label="City name" />
+                        <button id="search-btn" class="btn" type="submit" aria-label="Search">Search</button>
+                    </form>
+                    <button id="loc-btn" class="btn btn--ghost" type="button" aria-label="Use my location">Use my location</button>
+                </div>
+            </section>
+
+            <section id="status" class="status card" role="status" aria-live="polite" hidden></section>
+
+            <section id="current" class="current card" hidden>
+                <header class="current__header">
+                    <div class="current__place" id="place"></div>
+                    <div class="current__time" id="observed-at"></div>
+                </header>
+                <div class="current__content">
+                    <div class="current__temp">
+                        <span id="temperature" class="current__temperature">--</span>
+                        <span id="unit" class="current__unit">°C</span>
+                    </div>
+                    <div class="current__meta">
+                        <div class="current__summary" id="summary">—</div>
+                        <div class="current__details" id="details">—</div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <span>Data by <a href="https://open-meteo.com" target="_blank" rel="noreferrer noopener">Open‑Meteo</a></span>
+            </footer>
+        </main>
+
+        <script src="app.js"></script>
+        <noscript>Your browser needs JavaScript enabled to use this app.</noscript>
+    </body>
+</html>

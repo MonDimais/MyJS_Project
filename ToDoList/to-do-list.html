@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <h1 class="title">Todo</h1>
+
+      <form id="todo-form" class="todo-form" autocomplete="off">
+        <input id="new-todo-input" class="todo-input" type="text" placeholder="What needs to be done?" aria-label="New todo">
+        <button id="add-todo-btn" class="add-btn" type="submit" aria-label="Add todo">Add</button>
+      </form>
+
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+      <button id="undo-btn">↩ Undo</button>
+
+      <p id="empty-state" class="empty-state" hidden>No todos yet. Add one above!</p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+

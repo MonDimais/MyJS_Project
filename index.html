@@ -1,18 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Game project List</title>
-    </head>
-    <body>
-        <h1>Game List</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 1.2rem;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: white;
+            margin: 0.75rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: transform 0.15s ease-in-out, 
+                        box-shadow 0.15s ease-in-out;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #4a90e2;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin: 0.3rem 0 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Web Project List</h1>
+    </header>
+
+    <main>
         <ol>
-            <li><a href="2048 Game/2048.html">2048 Game</a></li>
-            <li><a href="Pong Game/pong.html">Pong Game</a></li>
-            <li><a href="Snake Game/snake.html">Snake Game</a></li>
-            <li><a href="Tic-Tac-Toe/tictactoe.html">Tic-Tac-Toe Game</a></li>
-            <li><a href="Wordle/wordle.html">Wordle Game</a></li>
+            <li>
+                <a href="2048 Game/2048.html">2048 Game</a>
+                <p>Play the classic 2048 puzzle with smooth controls.</p>
+            </li>
+            <li>
+                <a href="Pong Game/pong.html">Pong Game</a>
+                <p>Retro Pong game with two-player controls.</p>
+            </li>
+            <li>
+                <a href="Snake Game/snake.html">Snake Game</a>
+                <p>Classic Snake game, try to get the highest score!</p>
+            </li>
+            <li>
+                <a href="Tic-Tac-Toe/tictactoe.html">Tic-Tac-Toe Game</a>
+                <p>Play against a friend in this timeless game.</p>
+            </li>
+            <li>
+                <a href="Wordle/wordle.html">Wordle Game</a>
+                <p>Guess the word in limited attempts.</p>
+            </li>
+            <li>
+                <a href="WeatherApp/weather.html">Simple Weather App</a>
+                <p>Check real-time weather by location.</p>
+            </li>
+            <li>
+                <a href="ToDoList/to-do-list.html">Simple ToDoList App</a>
+                <p>Organize your daily tasks efficiently.</p>
+            </li>
         </ol>
-    </body>
+    </main>
+</body>
 </html>
